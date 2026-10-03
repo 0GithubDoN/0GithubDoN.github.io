@@ -27,39 +27,53 @@ export default function DeleteAccount() {
 
         <div className="prose prose-invert prose-cyan max-w-none space-y-6 text-gray-300">
           <p>
-            This page explains how to request deletion of your account and data for the mobile game <strong>Void Dash</strong>, developed by <strong>DoN [George Lucian]</strong>.
+            This page explains how to delete your account and data for the mobile game <strong>Void Dash</strong>, developed by <strong>DoN [George Lucian]</strong>.
           </p>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4 text-void-cyan">How to request deletion</h2>
+          <h2 className="text-2xl font-bold mt-8 mb-4 text-void-cyan">Option 1: Delete in the app (instant)</h2>
+
+          <ol className="list-decimal list-inside space-y-2 ml-4">
+            <li>Open Void Dash and tap the <strong>Account</strong> button on the main menu.</li>
+            <li>Tap <strong>Delete account &amp; data</strong> at the bottom of the Player Account screen.</li>
+            <li>Tap it again to confirm. Deletion happens immediately.</li>
+          </ol>
+
+          <p>
+            This works for both registered accounts and guest players. After deletion the game starts over as a brand new guest.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-8 mb-4 text-void-cyan">Option 2: Request deletion by email</h2>
+
+          <p>
+            If you no longer have the app installed, or you also want your leaderboard scores removed completely:
+          </p>
 
           <ol className="list-decimal list-inside space-y-2 ml-4">
             <li>
               Send an email to <a href="mailto:lucian3boy@gmail.com?subject=Void%20Dash%20account%20deletion" className="text-void-cyan hover:text-void-magenta transition-colors">lucian3boy@gmail.com</a> with the subject <strong>"Void Dash account deletion"</strong>.
             </li>
-            <li>Include the username of the account you want deleted (and your leaderboard display name, if different).</li>
-            <li>We will confirm by email once the deletion is complete, within <strong>30 days</strong> of your request.</li>
+            <li>Include your username (or, for guest players, your leaderboard display name).</li>
+            <li>We will delete your account and all associated data, including leaderboard scores, and confirm by email within <strong>30 days</strong>.</li>
           </ol>
-
-          <p>
-            If you only ever played as a guest (without creating a username), your progress is tied to this device. Uninstalling the App or clearing its storage removes your local data; you can also email us to have the guest cloud data removed.
-          </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-void-cyan">What is deleted</h2>
 
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Your Void Dash account (username, password, and player ID) in Unity Gaming Services</li>
             <li>Your cloud save data (coins, best distance, avatar choice, upgrade levels, unlocked and equipped skins)</li>
-            <li>Your leaderboard entries and display name</li>
+            <li>Your display name on the leaderboards</li>
+            <li>All progress stored on your device (when deleting in the app)</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-void-cyan">What is kept</h2>
 
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>We do not keep any of the account data listed above after deletion.</li>
-            <li>Progress stored locally on your device stays there until you uninstall the App or clear its storage.</li>
+            <li>
+              When you delete in the app, your best scores may remain on the public leaderboards as an anonymous entry named &quot;DeletedPlayer&quot;, no longer linked to any account. Email us if you want these removed as well.
+            </li>
             <li>
               Advertising data collected by Unity Ads is handled under{" "}
-              <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer" className="text-void-cyan hover:text-void-magenta transition-colors">Unity's privacy policy</a>
+              <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer" className="text-void-cyan hover:text-void-magenta transition-colors">Unity&apos;s privacy policy</a>
               . You can reset your advertising ID in your device settings (e.g., Android Settings → Privacy → Ads).
             </li>
           </ul>
